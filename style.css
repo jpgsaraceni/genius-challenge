@@ -1,0 +1,361 @@
+body{
+    background-image: radial-gradient(#2f2b2b, black);
+}
+
+/*=================================================================*/
+/*                          Principal                             
+/*================================================================*/
+.simonMenu{
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#title{
+    font-family: 'Coda Caption', sans-serif;
+    color: white;
+    width: 700px;
+    text-align: center;
+    font-size: 147px;
+    justify-content: center;
+    height: 124px;
+    cursor: default;
+
+    
+}
+.options{
+    width: 500px;
+    height: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+#menu{
+    display: flex;
+}
+#subTitle1{
+    font-family: 'Coda Caption', sans-serif;
+    color: white;
+    width: 700px;
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    margin-top: -120px;
+    cursor: default;
+
+}
+.playBtn{
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    font-family: 'Coda Caption', sans-serif;
+    font-weight: bold;
+    padding: 9px 5px 11px 6px;
+    font-size: 24px;
+    color: #ffffff;
+    width: 176px;
+    height: 38px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.btn{
+    width: 361px;
+    height: 241px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+.btn img{
+    width: 40px;
+}
+#playButton{
+    background-color: #70b91c;
+    box-shadow: 0 0.5em #53831b;
+}
+#acesBtn{
+    background-color: #0782ba;
+    box-shadow: 0 0.5em #105993;
+}
+#helpBtn{
+    background-color: #c6b305;
+    box-shadow: 0 0.5em #867a08;
+}
+#settBtn{
+    background-color: #a52414;
+    box-shadow: 0 0.5em #791c11;
+}
+
+.playBtn:active{
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+
+
+/*================================================================*/
+
+#acessibilidade{
+    display: none;
+}
+
+/*================================================================*/
+
+#menuDaltonismo{
+    display: none;
+
+}
+
+/*================================================================*/
+#settings{
+    display: none;
+}
+.setColor{
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    font-family: 'Coda Caption', sans-serif;
+    font-weight: bold;
+    padding: 0px 4px 12px 4px;
+    font-size: 24px;
+    color: #ffffff;
+    width: 107px;
+    height: 32px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.setColor input{
+    width: 92px;
+    border-style: none;
+    text-align: center;
+    font-weight: 800;
+    color: #525252
+}
+#redBtn{
+    background: #a52414;  
+}
+#blueBtn{
+    background: #197dcc;
+}
+#yellowBtn{
+    background: #e9d735;
+}
+#greenBtn{
+    background: #4caf50;
+}
+.settingTitle{
+    width: 600px;
+    height: 40px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    cursor: default;
+}
+.bold{
+    font-weight: bold;
+}
+#settingTitle1{
+    width: 600px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-top: -50px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: justify;
+    font-weight: bold;
+}
+.checkBox input{
+    width: 20px;
+    height: 15px;
+}
+.checkBox{
+    color: white;
+    width: 288px;
+    margin-top: 3px;
+    font-size: 19px;
+    font-weight: 800;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.btnOptions{
+    width: 484px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-self: flex-end;
+    position: absolute;
+
+}
+#help{
+    display:none;
+}
+
+/*=================================================================*/
+/*                           Simon Display                             
+/*================================================================*/
+.simonDevice{
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#topDisplay{
+    width:7800px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+#clockDisplay{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 151px;
+}
+#clockDisplay input{
+    width: 36px;
+    border-style: none;
+    background: none;
+    font-size: 29px;
+    color: #ffeb3b;
+    text-align: left;
+}
+.setDisplay{
+    width: 120px;
+    height: 50px;
+    border-style: none;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    cursor: default;
+
+}
+.setDisplay input[type="number"]::-webkit-outer-spin-button,
+.setDisplay input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.setDisplay input[type="number"] {
+    -moz-appearance: textfield;
+    width: 115px;
+    height: 27px;
+    border-radius: 3px;
+    border-style: none;
+    background: black;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;   
+    cursor: default;
+
+}
+.simonAlert{
+    font-family: 'Coda Caption', sans-serif;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-size: 49px;
+    margin-bottom: 10px;
+    display: none;
+    justify-content: center;
+    margin-left: 27px;
+    cursor: pointer;
+}
+
+#innerDisplay{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    position: absolute;
+    background: rgb(0 0 0);
+    width: 250px;
+    height: 250px;
+    margin-left: 122px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 10px rgb(0 0 0 / 46%);
+
+}
+
+#simonColors{
+    width: 500px;
+    height: 500px;
+    background: black;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    border: 17px solid black;
+    flex-wrap: wrap;
+    box-shadow: 1px 14px 20px 5px rgb(0 0 0 / 51%);;
+    border-radius: 50%;
+    margin-top: 15px;
+    position: absolute;
+    margin-top: 82px;
+  
+}
+.colorButton{
+    width: 245px;
+    height: 245px;
+    border-style: none;
+}
+#green{
+    background:linear-gradient(45deg, rgb(0,255,0), rgb(2 61 0));
+    border-radius:20px 320px 20px 20px;
+}
+#red{
+    background-image:linear-gradient(315deg, rgb(255,0,0), rgb(112 0 0));
+    border-radius:320px 20px 20px;
+}
+#blue{
+    background-image:linear-gradient(225deg, rgb(0,0,255), rgb(2 3 18));
+    border-radius:20px 20px 20px 320px;
+}
+#yellow{
+    background:linear-gradient(135deg, rgb(255,255,0), rgb(82 86 0));
+    border-radius:20px 20px 320px 20px;
+}
+#simonButtons{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-self: flex-end;
+
+}
+.controlButton{
+    width: 115px;
+    height: 34px;
+    border-style: none;
+    background: none;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px ;
+    cursor: pointer;
+
+}
+
+#replayButton, #restartButton{
+    display: none;
+}
+
+#simonButtonsHelp{
+    justify-content: space-around;
+}
+
+#loading-page{
+    display: none;
+    margin: auto;
+    margin-top: 10%;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Genius</title>
+    </head>
+
+    <body>
+        <div class="simonMenu" id="first-page">
+
+            <div id="title">Genius</div>
+
+            <div class="options" id="menu">
+                <div class="btn">
+                    <span class="playBtn" id='playButton'><img src="image/play.png"></span>
+                    <span class="playBtn" id='settBtn'><img src="image/settings.png"></span>
+                    <span class="playBtn" id='helpBtn'><img src="image/help.png"></span>
+                </div> 
+            </div>  
+        
+            <div class="options" id="settings">
+                <span class="settingTitle">Set Keyboard Controls</span>
+                    <span class="setColor" id='redBtn' onclick="read('redKey')">r</input></span> 
+                    <span class="setColor" id='greenBtn' onclick="read('greenKey')">g</input></span> 
+                    <span class="setColor" id='yellowBtn'onclick="read('yellowKey')">y</span> 
+                    <span class="setColor" id='blueBtn'onclick="read('blueKey')">b</span> 
+                <span class="settingTitle">Speed</span>
+                <div class="checkBox"id="levels">
+                    <label><input type="radio" id="slow" name="speed">SLOW</label>
+                    <label><input type="radio" id="medium" name="speed" checked>MEDIUM</label>
+                    <label><input type="radio" id="fast" name="speed">FAST</label>
+                </div>
+                <span class="settingTitle">Kenji Mode</span>
+                <div class="checkBox"id="strict">
+                    <label><input type="radio" id="strictOn" name="strict" checked>ON</label>
+                    <label><input type="radio" id="strictOff" name="strict">OFF</label>
+                </div>
+                <div class="btnOptions" id="simonButtonsPrincipal">
+                    <button class="controlButton" id="voltarButton0">Save</button>
+                    <button class="controlButton" id="restaurarButton0">Default</button>
+                </div>
+            </div>
+
+            <div class="options" id="help">
+                <span id="subTitle1">Are you ready for Kenjius?</span>
+                <span id="settingTitle1"><span id="bold">1.</span> Press the Play button. Genius will give the first signal. Repeat the signal by pressing the same color lens.<br>
+                <span class="bold">2.</span> Genius will duplicate the first signal and add one. Repeat these two signals by pressing the same color lenses, in order.<br>
+                <span class="bold">3.</span> Genius will duplicate these first two signals and add one.</br>
+                <span class="bold">4.</span> Continue playing as long as you can repeat each sequence of sig- nals correctly. When set to medium (which is default speed) or fast speed, Genius speeds up after each round.</br>
+                <span class="bold">5.</span> If you fail to repeat a sequence exactly, or if you take more than 5 seconds (in normal speed, 10 seconds in slow speed or 2 seconds in fast speed) to repeat a signal, Genius responds with a "MEU DEUS" sound. This means you've lost, and the sequence of signals ends.</br>
+                <span class="bold">6.</span> For an extra challenge, try KENJI MODE. In this mode (which is default mode), you must start over if you make any mistake, or run out of time.</span>
+                <div  class="btnOptions"id="simonButtonsHelp">
+                    <button class="controlButton" id="voltarButton1">Quit</button>
+                </div>     
+            </div>
+        </div>
+
+        <div id="loading-page">
+            <svg style="margin: auto; background: none; shape-rendering: auto;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <circle cx="50" cy="50" fill="none" stroke="#ffffff" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138">
+                  <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="2.6315789473684212s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                </circle>
+            </svg>
+        </div>
+
+        <div class="simonDevice" id="second-page">
+            <div id="topDisplay">
+                <div class="setDisplay">
+                    <span>Highest</span>
+                    <input type="number" id="highest">       
+                </div>
+                <div class="setDisplay" id="time">
+                    <div id="clockDisplay">
+                        <p>
+                            <input type="number" id="minutes">:
+                            <input type="number" id="seconds">:
+                            <input type="number" id="dseconds">
+                        </p>
+                    </div>       
+                </div>
+                <div class="setDisplay">
+                    <span>Score</span>
+                    <input type="number" id="score">     
+                </div>
+            </div>
+            <div id="simonColors">
+                <button class="colorButton" id="red" onclick="clickColor(this.id)" disabled></button>
+                <button class="colorButton" id="green" onclick="clickColor(this.id)" disabled></button>
+                <button class="colorButton" id="blue" onclick="clickColor(this.id)" disabled></button>
+                <button class="colorButton" id="yellow" onclick="clickColor(this.id)" disabled></button>
+                <div id="innerDisplay">
+                    <div class="simonAlert" id="simonName">GENIUS</div>
+                    <div class="simonAlert" id="simonPlay">Play</div>
+                    <div class="simonAlert" id="simonRestart" onclick="playGame">Restart</div>
+                </div>
+            </div>
+            <div id="simonButtons">
+                <button class="controlButton" id="quitButton0">Quit</button>
+                <div id="teste">
+                    <button class="controlButton" id="replayButton" onclick="simon.replay()">Replay</button>
+                    <button class="controlButton" id="stopButton0"><span id="stopButton">Stop</span></button>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>

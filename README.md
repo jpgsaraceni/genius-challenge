@@ -1,2 +1,2 @@
-# git-test
+# genius
 Repository to test github

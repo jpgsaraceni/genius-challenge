@@ -1,5 +1,5 @@
-# Primeiro Desafio da Turma ENIAC I - Alpha EdTech
-## Descrição
+# Primeiro Desafio da Turma ENIAC I - Alpha EdTech (24/04)
+## Objetivo
 Desenvolver uma versão web do jogo Simon, lançado no Brasil como Genius. 
 
 Link explicativo do jogo: https://pt.wikipedia.org/wiki/Genius_(jogo) 
